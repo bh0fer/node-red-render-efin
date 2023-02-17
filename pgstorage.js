@@ -59,8 +59,8 @@ function saveFlows(flows) {
   console.log('saveFlows')
   return when.promise(async (resolve, reject, notify) => {
     try {
-      let secure_link = process.env.SECURE_LINK
-      await pgutil.saveConfig(appname, { appname, flows, secure_link })
+      let secureLink = process.env.SECURE_LINK
+      await pgutil.saveConfig(appname, { appname, flows, secureLink })
       resolve()
     } catch (err) {
       reject(err)
