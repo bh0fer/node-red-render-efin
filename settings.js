@@ -61,7 +61,7 @@ var settings = module.exports = {
 
     httpNodeCors: {
         origin: "*",
-        methods: "GET,PUT,POST,DELETE"
+        methods: "GET,PUT,POST,DELETE,PATCH,UPDATE"
     },
     
     // Disbled Credential Secret
